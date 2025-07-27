@@ -94,12 +94,3 @@ npm start
 npm run build
 ```
 
-## License 📄
-
-This project is licensed under the ISC License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments 🎁
-
-- Based on the Simplefolio template by Jacobo Martinez
-- Font Awesome for icons
-- Bootstrap for responsive design
