@@ -1,0 +1,524 @@
+<!--
+  Hello!
+  -
+  Simplefolio is a clean and responsive portfolio template for Developers!
+  Created by Jacobo Martinez.
+  -
+  Github Repo: https://github.com/cobiwave/simplefolio/
+  Readme: https://github.com/cobiwave/simplefolio/README.md
+  -
+  For business & inquires, contact me -> jacobojavier98@gmail.com
+-->
+<!DOCTYPE html>
+<html lang="en" class="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- Todo: put here your site title -->
+    <title>Dakshin Dath | MERN Stack Developer</title>
+    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="dakshindath, Dakshin Dath, MERN Stack, React, Node.js, MongoDB, Express, JavaScript, TypeScript" />
+    <!-- Todo: improve your SEO by adding a small description of you -->
+    <meta name="description" content="Dakshin Dath | MERN Stack Developer" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.scss" />
+    <script
+      defer
+      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+    ></script>
+  </head>
+
+  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
+  <body>
+    <div id="top"></div>
+
+    <!-- Side Navbar Toggle Button -->
+    <div class="navbar-toggle-btn">
+      <i class="fas fa-chevron-right"></i>
+    </div>
+
+    <!-- Side Navbar -->
+    <nav class="side-navbar">
+      <ul class="side-navbar-links">
+        <li><a href="#hero" title="Home"><i class="fas fa-home"></i></a></li>
+        <li><a href="#about" title="About"><i class="fas fa-user"></i></a></li>
+        <li><a href="#skills" title="Skills"><i class="fas fa-code"></i></a></li>
+        <li><a href="#projects" title="Projects"><i class="fas fa-folder"></i></a></li>
+        <li><a href="#experience" title="Experience"><i class="fas fa-briefcase"></i></a></li>
+        <li><a href="#education" title="Education"><i class="fas fa-graduation-cap"></i></a></li>
+        <li><a href="#contact" title="Contact"><i class="fas fa-envelope"></i></a></li>
+      </ul>
+    </nav>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay"></div>
+
+    <!-- **** Hero Section **** -->
+    <section id="hero" class="jumbotron">
+      <div class="container">
+        <div class="row hero-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="hero-content">
+              <h1 class="hero-title load-hidden">
+                Hi, my name is <span class="text-color-main">Dakshin Dath</span>
+                <br />
+                I'm a MERN Stack Developer.
+              </h1>
+              <!-- <p class="hero-cta load-hidden">
+                <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">Know more</a>
+              </p> -->
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="hero-image load-hidden">
+              <img
+                src="assets/home-main.svg"
+                alt="Hero Illustration"
+                class="hero-svg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END Hero Section -->
+
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title load-hidden">About me</h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image load-hidden">
+              <img
+                alt="Profile Image"
+                class="img-fluid rounded"
+                height="auto"
+                width="600px"
+                src="assets/profile.png"
+                alt="Profile Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info load-hidden">
+              <p class="about-wrapper__info-text">
+                I'm a dedicated Full Stack Developer specializing in React and Node.js, passionate about building high-performance, responsive applications. With expertise in creating user-friendly front-end designs, developing efficient back-end systems, and integrating APIs, I bring both technical skills and a collaborative mindset to every project.
+              </p>
+              <p class="about-wrapper__info-text">
+                Currently working as a MERN Stack Intern at Relaxplzz Technologies in Technopark, TVM, where I contribute to both frontend and backend modules using modern technologies. I'm experienced in Agile workflows and committed to delivering scalable solutions aligned with business goals. When I'm not coding, I enjoy exploring music and traveling to discover new cultures and cuisines.
+              </p>
+              <span class="d-flex mt-3">
+                <a
+                  rel="noreferrer"
+                  class="cta-btn cta-btn--resume"
+                  href="assets/DakshinDath_Resume.pdf"
+                  download="DakshinDath_Resume.pdf"
+                >
+                  <i class="fas fa-download"></i> Download Resume
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!-- **** Skills Section **** -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title load-hidden">Professional Skillset</h2>
+        <div class="skills-wrapper">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="skills-wrapper__info">
+                <div class="skills-wrapper__info-text">
+                  <p>
+                    My technical expertise spans across modern web development technologies, 
+                    with a focus on creating efficient, scalable, and user-friendly applications.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-grid load-hidden">
+            <!-- Frontend Skills -->
+            <div class="skill-card">
+              <i class="fab fa-react" title="React"></i>
+              <span class="skill-name">React</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-js-square" title="JavaScript"></i>
+              <span class="skill-name">JavaScript</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-html5" title="HTML5"></i>
+              <span class="skill-name">HTML5</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+              <span class="skill-name">CSS3</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-bootstrap" title="Bootstrap"></i>
+              <span class="skill-name">Bootstrap</span>
+            </div>
+            
+            <!-- Backend Skills -->
+            <div class="skill-card">
+              <i class="fab fa-node-js" title="Node.js"></i>
+              <span class="skill-name">Node.js</span>
+            </div>
+            <div class="skill-card mongodb-icon">
+              <span class="custom-icon">M</span>
+              <span class="skill-name">MongoDB</span>
+            </div>
+            <div class="skill-card typescript-icon">
+              <span class="custom-icon">TS</span>
+              <span class="skill-name">TypeScript</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-npm" title="NPM"></i>
+              <span class="skill-name">NPM</span>
+            </div>
+            
+            <!-- Tools -->
+            <div class="skill-card">
+              <i class="fab fa-git-alt" title="Git"></i>
+              <span class="skill-name">Git</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-github" title="GitHub"></i>
+              <span class="skill-name">GitHub</span>
+            </div>
+            <div class="skill-card firebase-icon">
+              <span class="custom-icon">🔥</span>
+              <span class="skill-name">Firebase</span>
+            </div>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-md-12">
+              <h3 class="tools-title">Tools I Use</h3>
+              <div class="tools-grid load-hidden">
+                <div class="tool-card">
+                  <i class="fab fa-windows"></i>
+                  <span>Windows</span>
+                </div>
+                <div class="tool-card">
+                  <i class="fas fa-code"></i>
+                  <span>VS Code</span>
+                </div>
+                <div class="tool-card">
+                  <i class="fas fa-rocket"></i>
+                  <span>Postman</span>
+                </div>
+                <div class="tool-card">
+                  <i class="fab fa-slack"></i>
+                  <span>Slack</span>
+                </div>
+                <div class="tool-card">
+                  <i class="fas fa-terminal"></i>
+                  <span>Terminal</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-md-12">
+              <h3 class="github-title">Days I Code</h3>
+              <div class="github-contribution-chart load-hidden">
+                <div class="contribution-months">
+                  <span>Aug</span>
+                  <span>Sep</span>
+                  <span>Oct</span>
+                  <span>Nov</span>
+                  <span>Dec</span>
+                  <span>Jan</span>
+                  <span>Feb</span>
+                  <span>Mar</span>
+                  <span>Apr</span>
+                  <span>May</span>
+                  <span>Jun</span>
+                  <span>Jul</span>
+                </div>
+                <div class="contribution-grid">
+                  <!-- Generate contribution squares with different activity levels -->
+                </div>
+                <div class="contribution-legend">
+                  <span>245 contributions in the last year</span>
+                  <div class="legend-scale">
+                    <span>Less</span>
+                    <div class="legend-squares">
+                      <div class="square level-0"></div>
+                      <div class="square level-1"></div>
+                      <div class="square level-2"></div>
+                      <div class="square level-3"></div>
+                      <div class="square level-4"></div>
+                    </div>
+                    <span>More</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END Skills Section -->
+
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">StayNest - Booking App</h3>
+                <div>
+                  <p class="mb-4">
+                    A feature-rich booking application enabling users to seamlessly search, reserve, and manage bookings for various services. 
+                    Features intuitive UI, robust authentication, secure payment integration, and an efficient admin dashboard. 
+                    Built with emphasis on responsive design, performance, and data security using React.js, Node.js, Express.js, MongoDB, TypeScript, and Tailwind CSS.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/dakshindath"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/project.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">URL Shortener Web Application</h3>
+                <div>
+                  <p class="mb-4">
+                    A full-stack URL shortener with user authentication for signup, login, and logout. 
+                    Users can add, edit, and delete URLs with automatic shortening (limited to 5 URLs per user). 
+                    Features paginated listing with search functionality by title or URL. 
+                    Demonstrates expertise in user management, database integration, and full-stack development using React, Node.js, Express, and MongoDB.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/dakshindath"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/project2.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
+
+    <!-- **** Experience Section **** -->
+    <section id="experience">
+      <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-subtitle">My professional journey and key contributions.</p>
+        
+        <div class="project-wrapper">
+          <!-- Current Role -->
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 col-sm-12">
+              <div class="experience-card load-hidden">
+                <div class="experience-icon">
+                  <i class="fas fa-briefcase"></i>
+                </div>
+                <h3 class="experience-title">MERN Stack Intern</h3>
+                <h4 class="experience-company">Relaxplzz Technologies</h4>
+                <p class="experience-location">Technopark, TVM</p>
+                <span class="experience-duration">April 2025 – Present</span>
+                <p class="experience-description">
+                  Contributing to full-stack development projects using modern MERN technologies while gaining valuable industry experience.
+                </p>
+                <ul class="experience-list">
+                  <li>Participated in daily stand-ups and code reviews, improving code quality and team communication</li>
+                  <li>Enhanced problem-solving, version control (Git), and collaborative development skills in a professional environment</li>
+                  <li>Contributed to both frontend and backend modules using modern technologies such as React.js, Node.js, Express, and MongoDB</li>
+                  <li>Gained hands-on experience in FullStack development by working on live projects with the development team</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Training Experience -->
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 col-sm-12">
+              <div class="experience-card load-hidden">
+                <div class="experience-icon">
+                  <i class="fas fa-briefcase"></i>
+                </div>
+                <h3 class="experience-title">MERN Stack Training</h3>
+                <h4 class="experience-company">Mashupstack</h4>
+                <p class="experience-location">TVM</p>
+                <span class="experience-duration">June 2024 – Jan 2025</span>
+                <p class="experience-description">
+                  Comprehensive training program focusing on full-stack web development using the MERN technology stack.
+                </p>
+                <ul class="experience-list">
+                  <li>Built full-stack applications using MongoDB, Express.js, React.js, and Node.js</li>
+                  <li>Developed comprehensive understanding of REST APIs and database integration</li>
+                  <li>Mastered version control using Git/GitHub for collaborative development</li>
+                  <li>Completed multiple hands-on projects demonstrating full-stack capabilities</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /END Experience Section -->
+
+    <!-- **** Education Section **** -->
+    <section id="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">My academic background and qualifications.</p>
+        
+        <div class="project-wrapper">
+          <!-- Education -->
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 col-sm-12">
+              <div class="education-card load-hidden">
+                <div class="education-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3 class="education-title">Bachelor of Science in Computer Science</h3>
+                <h4 class="education-institution">University Institute of Technology, Azhoor</h4>
+                <p class="education-location">Kerala, India</p>
+                <span class="education-duration">Graduated: May 2024</span>
+                <p class="education-description">
+                  Comprehensive coursework in programming, data structures, algorithms, computer networks, operating systems, and software engineering. 
+                  Gained practical experience through academic projects using Python, JavaScript, and full-stack development tools.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /END Education Section -->
+
+    <!-- **** Contact Section **** -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper load-hidden">
+          <p class="contact-wrapper__text">Let's work together and create something amazing!</p>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            class="cta-btn cta-btn--resume"
+            href="mailto:dakshindath4@gmail.com"
+            >Get In Touch</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- /END Contact Section -->
+
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a rel="noreferrer" href="#top" class="back-to-top">
+          <i class="fas fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a rel="noreferrer" href="https://github.com/dakshindath" target="_blank">
+            <i class="fab fa-github fa-inverse"></i>
+          </a>
+          <a rel="noreferrer" href="mailto:dakshindath4@gmail.com" target="_blank">
+            <i class="fas fa-envelope fa-inverse"></i>
+          </a>
+          <a rel="noreferrer" href="tel:+918848827227" target="_blank">
+            <i class="fas fa-phone fa-inverse"></i>
+          </a>
+        </div>
+
+        <hr />
+
+        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
+        <p class="footer__text">
+          © 2025 - Developed by
+          <a rel="noreferrer" href="https://github.com/dakshindath" target="_blank"
+            >Dakshin Dath</a
+          >
+        </p>
+
+      </div>
+    </footer>
+    <!-- /END Footer Section -->
+
+    <script defer type="module" src="index.js"></script>
+  </body>
+</html>

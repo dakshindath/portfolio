@@ -1,0 +1,127 @@
+#education {
+  color: $dark-blue-text;
+  margin-top: -10rem;
+  padding-top: 15rem;
+  padding-bottom: 10rem;
+
+  @include respond(tab-land) {
+    margin-top: 0;
+    padding-top: 5rem;
+  }
+
+  .project-wrapper {
+    margin-bottom: 5rem;
+
+    @include respond(phone) {
+      margin-bottom: 0rem;
+    }
+
+    .row {
+      margin-bottom: 4rem;
+      justify-content: center;
+
+      @include respond(phone) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  .section-title {
+    color: $dark-blue-text;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .section-subtitle {
+    text-align: center;
+    color: $dark-grey;
+    opacity: 0.8;
+    margin-bottom: 5rem;
+    font-size: 1.8rem;
+  }
+
+  .education-card {
+    background: $white-color;
+    border-radius: 15px;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, $primary-color 0%, $secondary-color 100%);
+    }
+
+    @include respond(phone) {
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .education-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    color: $white-color;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .education-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: $dark-blue-text;
+    margin-bottom: 0.5rem;
+  }
+
+  .education-institution {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $primary-color;
+    margin-bottom: 0.5rem;
+  }
+
+  .education-location {
+    font-size: 1.4rem;
+    color: $dark-grey;
+    margin-bottom: 0.3rem;
+    opacity: 0.7;
+  }
+
+  .education-duration {
+    font-size: 1.4rem;
+    color: $secondary-color;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 205, 172, 0.1);
+    border-radius: 20px;
+    display: inline-block;
+  }
+
+  .education-description {
+    color: $dark-grey;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    margin-bottom: 0;
+  }
+}

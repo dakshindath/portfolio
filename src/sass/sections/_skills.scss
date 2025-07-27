@@ -1,0 +1,336 @@
+#skills {
+  background-color: $white-color;
+  color: $dark-grey;
+  margin-top: -10rem;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+
+  @include respond(tab-land) {
+    margin-top: 0;
+    padding-top: 5rem;
+  }
+
+  .skills-wrapper {
+    margin-top: 3rem;
+
+    &__info {
+      margin-bottom: 4rem;
+      text-align: center;
+
+      @include respond(phone) {
+        margin-bottom: 2.5rem;
+      }
+
+      &-text {
+        p {
+          font-size: 1.2rem;
+          color: #666;
+          max-width: 600px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include respond(phone) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .skill-card {
+      background: $white-color;
+      border: 2px solid #e1e8ed;
+      border-radius: 15px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      aspect-ratio: 1;
+      position: relative;
+      
+      &:hover {
+        border-color: $primary-color;
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      i {
+        font-size: 3rem;
+        color: $primary-color;
+        transition: all 0.3s ease;
+
+        @include respond(phone) {
+          font-size: 2.5rem;
+        }
+
+        &.fab.fa-react {
+          color: #61dafb;
+        }
+
+        &.fab.fa-js-square {
+          color: #f7df1e;
+        }
+
+        &.fab.fa-html5 {
+          color: #e34f26;
+        }
+
+        &.fab.fa-css3-alt {
+          color: #1572b6;
+        }
+
+        &.fab.fa-bootstrap {
+          color: #7952b3;
+        }
+
+        &.fab.fa-node-js {
+          color: #339933;
+        }
+
+        &.fab.fa-git-alt {
+          color: #f05032;
+        }
+
+        &.fab.fa-github {
+          color: #333;
+        }
+      }
+
+      .custom-icon {
+        font-size: 3rem;
+        font-weight: 900;
+        font-family: 'Arial', sans-serif;
+        transition: all 0.3s ease;
+
+        @include respond(phone) {
+          font-size: 2.5rem;
+        }
+      }
+
+      &.mongodb-icon .custom-icon {
+        color: #47a248;
+        background: linear-gradient(135deg, #47a248, #3f9142);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      &.typescript-icon .custom-icon {
+        color: #3178c6;
+        background: #3178c6;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 8px;
+        font-size: 2rem;
+        line-height: 1;
+        
+        @include respond(phone) {
+          font-size: 1.5rem;
+          padding: 0.4rem;
+        }
+      }
+
+      &.firebase-icon .custom-icon {
+        font-size: 3rem;
+        filter: hue-rotate(15deg) saturate(1.2);
+        
+        @include respond(phone) {
+          font-size: 2.5rem;
+        }
+      }
+
+      .skill-fallback {
+        display: none;
+        font-size: 1rem;
+        font-weight: 600;
+        color: $primary-color;
+        margin-top: 0.5rem;
+        text-align: center;
+      }
+
+      .skill-name {
+        display: block;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #666;
+        margin-top: 0.8rem;
+        text-align: center;
+        
+        @include respond(phone) {
+          font-size: 0.8rem;
+          margin-top: 0.6rem;
+        }
+      }
+
+      // Show fallback text if icon fails to load
+      &:not(:has(i[class*="fa-"])) .skill-fallback,
+      i:not([class*="fa-"]) + .skill-fallback {
+        display: block;
+      }
+    }
+  }
+
+  .tools-title {
+    text-align: center;
+    color: $secondary-color;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+
+    @include respond(phone) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .tool-card {
+      background: $white-color;
+      border: 2px solid #e1e8ed;
+      border-radius: 10px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        border-color: $secondary-color;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      i {
+        font-size: 2rem;
+        color: $secondary-color;
+      }
+
+      span {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #666;
+      }
+    }
+  }
+
+  .github-title {
+    text-align: center;
+    color: $secondary-color;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  .github-contribution-chart {
+    background: $white-color;
+    border: 2px solid #e1e8ed;
+    border-radius: 15px;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+
+    @include respond(phone) {
+      padding: 1rem;
+    }
+
+    .contribution-months {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      color: #666;
+      font-weight: 500;
+
+      @include respond(phone) {
+        font-size: 0.9rem;
+        gap: 0.3rem;
+      }
+    }
+
+    .contribution-grid {
+      display: grid;
+      grid-template-columns: repeat(53, 1fr);
+      grid-template-rows: repeat(7, 1fr);
+      gap: 4px;
+      margin-bottom: 1rem;
+
+      @include respond(phone) {
+        gap: 3px;
+      }
+
+      .square {
+        aspect-ratio: 1;
+        border-radius: 2px;
+        
+        &.level-0 {
+          background-color: #ebedf0;
+        }
+        
+        &.level-1 {
+          background-color: #9be9a8;
+        }
+        
+        &.level-2 {
+          background-color: #40c463;
+        }
+        
+        &.level-3 {
+          background-color: #30a14e;
+        }
+        
+        &.level-4 {
+          background-color: #216e39;
+        }
+      }
+    }
+
+    .contribution-legend {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1rem;
+      color: #666;
+      font-weight: 500;
+
+      @include respond(phone) {
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 0.9rem;
+      }
+
+      .legend-scale {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        .legend-squares {
+          display: flex;
+          gap: 3px;
+
+          .square {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+          }
+        }
+      }
+    }
+  }
+}
