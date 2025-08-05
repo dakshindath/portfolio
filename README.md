@@ -40,7 +40,6 @@ This is the personal portfolio of Dakshin Dath, a dedicated MERN Stack Developer
 ## Contact
 
 - **Email**: dakshindath4@gmail.com
-- **Phone**: +91 8848827227
 - **Location**: Thiruvananthapuram, Kerala
 - **GitHub**: [github.com/dakshindath](https://github.com/dakshindath)
 
