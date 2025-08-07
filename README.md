@@ -1,4 +1,4 @@
-# Dakshin Dath Portfolio ⚡️
+# Dakshin Dath Portfolio 
 
 ## MERN Stack Developer Portfolio
 
@@ -13,13 +13,13 @@ This is the personal portfolio of Dakshin Dath, a dedicated MERN Stack Developer
 
 ## Features
 
-⚡️ Modern UI Design + Reveal Animations\
-⚡️ One Page Layout\
-⚡️ Styled with Bootstrap v4.3 + Custom SCSS\
-⚡️ Fully Responsive\
-⚡️ Valid HTML5 & CSS3\
-⚡️ Optimized with Parcel\
-⚡️ Well organized documentation
+ Modern UI Design + Reveal Animations\
+ One Page Layout\
+ Styled with Bootstrap v4.3 + Custom SCSS\
+ Fully Responsive\
+ Valid HTML5 & CSS3\
+ Optimized with Parcel\
+ Well organized documentation
 
 ---
 
